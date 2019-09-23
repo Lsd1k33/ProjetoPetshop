@@ -1,39 +1,92 @@
-<!--GUIA >> https://www.w3schools.com/html/html_head.asp  -->
-
-<!--Tag para o html, no caso o html mais recente.-->
+<!--tag para versão do html. Neste caso é o HTML mais recente-->
 <!DOCTYPE html>
 <html>
-  <!--Cabeçalho da Página, leia-se *Head-->
+  <!--Cabeçalho - configurações da página-->
   <head>
-    <title>Projeto</title>
+    <title>Ziriguidum PetShop</title>
 
-    <!--Link para o Arquivo css, no caso o *Syle-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link para o arquivo css-->
+    <link rel="stylesheet" href="./css/estilo.css" />
 
-    <!--Definição do formato de codificação de caracteres utilizado no documento-->
+    <!-- link para framework bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- definição do formato de codificação de caracteres utilizado no documento-->
     <meta charset="UTF-8" />
+    <!-- descrição da página-->
+    <meta name="description" content="Ziriguidum PetShop" />
+    <!-- palavras chaves-->
+    <meta name="keywords" content="PetShop, Animal, Cachorro, Tosa" />
+    <meta name="author" content="Mathias Almeida Gianotti de Nonohay" />
+    <!-- indicação de que a página deve ser atualizada a cada 30 segundos-->
+    <!--<meta http-equiv="refresh" content="30" />-->
 
-    <!--Descrição da página-->
-    <meta name="description" content="Teste de programação" />
+    <!-- código javascript simplificado não recomendado-->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Bem Vindo Consagrado!";
+      }
+    </script>
+    <!-- código javascript 2 recomendado-->
+    <script src="./js/inicial.js"></script>
 
-    <!--Palavras Chave-->
-    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-    <!--Autor-->
-    <meta name="author" content="Jorge Luiz de S Duarte" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!--Requisição para Atualizar a pagina, medida em segundos-->
-    <meta http-equiv="refresh" content="60" />
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <!--Código Javascript ~~ RECOMENDADO-->
-    <script src="js/inicial.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- tag para adicional css diretamente dentro do arquivo html - não recomendado
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      p {
+        font-family: verdana;
+        font-size: 20px;
+      }
+    </style>-->
   </head>
 
-  <!--Corpo da Página, leia-se *Body-->
-  <body>
-    <h1 id="( ͡° ͜ʖ ͡°)" class="resposta">( ͡° ͜ʖ ͡°)</h1>
+  <body
+    id="bodyID"
+    class="bodyClass"
+    background="C:\Users\Aluno\Documents\Mathias\ProjetoPet\Front-End\img\7c491b923433ab549d7f679d837ea970.jpg"
+  >
+    <div class="container bg-info text-center para1" style="width: 600px;">
+      <h1>Bem Vindo Consagrado!</h1>
+      <h2>Ziriguidum PetShop</h2>
+      <h3>
+        O Melhor Lugar Para Animais e Seu Pet!
+      </h3>
+    </div>
+    <!--Não funcionará uma tag html com dois id-->
 
-    <button onclick="luz()">Acende a Luz</button>
-    <button onclick="escuro()">Apaga a Luz</button>
+    <!--Para usar mais do que um estilo em uma única tag html é necessário utilizar classes css-->
+    <h3 class="para1 para2" id="tag3">Área de Login</h3>
+    <div class="container bg-info text-center" style="width: 200px;">
+      <label>Login:</label> <input id="login" type="text" />
+      <p></p>
+      <label>Senha:</label> <input id="login" type="text" />
+      <p></p>
+      <button type="button" class="btn btn-secondary">Entrar</button>
+    </div>
   </body>
 </html>

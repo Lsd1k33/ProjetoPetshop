@@ -1,18 +1,15 @@
-// TROCA O TITULO
-function myFunction() {
-  document.getElementById("demo").innerHTML = "THIS IS BRAZIL!";
-}
-
+// Troca o título
 function myFunction2() {
-  document.getElementById("demo").innerHTML = "THIS IS ARGENTINA!";
+  document.getElementById("demo").innerHTML = "This is a heading";
 }
 
-// TROCA O BACKGROUND
-function luz() {
-  document.getElementById("bodyID").classList = "backgroundluz";
-  document.getElementById("( ͡° ͜ʖ ͡°)").classList = "backgroundluz";
+//Troca o backgrond do body
+function trocaBackColor() {
+  document.getElementById("bodyID").classList = "bodyClass2";
+  alert("Cor de fundo trocada!");
 }
-function escuro() {
-  document.getElementById("bodyID").classList = "backgroundescuro";
-  document.getElementById("( ͡° ͜ʖ ͡°)").classList = "backgroundescuro";
+
+//Altera a saudação da página
+function escreveSaudacao(nome) {
+    document.getElementById("saudacao").innerHTML = "Boa noite " + nome +"!";
 }

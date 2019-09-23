@@ -1,0 +1,50 @@
+/* não é recomendado adicionar css diretamente nas tags html
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }*/
+
+/*CSS para ser aplicado no id para1*/
+/*Não recomendado pois o id é único e é mais utilizado para o js*/
+/*Não é possível adicionar duas formatações css para um mesmo objeto html referenciando apenas o id*/
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+#para2 {
+  background-color: rgb(85, 109, 80);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*classe CSS começa com ponto.*/
+/*É possível usar mais do que uma classe CSS em uma tag html.*/
+.para1 {
+  text-align: center;
+  color: rgb(5, 3, 3);
+}
+
+.para2 {
+  background-color: rgb(0, 0, 0);
+  font-family: serif;
+  color: rgb(0, 0, 255);
+}
+
+/*Classe CSS utilizada do body*/
+.bodyClass {
+  background-color: rgb(255, 255, 255);
+}
+
+/*Classe CSS utilizada do body 2*/
+.bodyClass2 {
+  background-color: rgb(162, 209, 152);
+}
