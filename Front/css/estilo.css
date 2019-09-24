@@ -35,8 +35,8 @@ body {
 
 .para2 {
   background-color: rgb(0, 0, 0);
-  font-family: serif;
-  color: rgb(0, 0, 255);
+  align-self: auto;
+  color: rgb(255, 255, 255);
 }
 
 /*Classe CSS utilizada do body*/
