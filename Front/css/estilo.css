@@ -48,3 +48,7 @@ body {
 .bodyClass2 {
   background-color: rgb(162, 209, 152);
 }
+
+button{
+  background: transparent;
+}
