@@ -34,6 +34,12 @@ body {
 }
 
 .para2 {
+  background-color: transparent;
+  align-self: auto;
+  color: rgb(255, 255, 255);
+}
+
+.para3 {
   background-color: rgb(0, 0, 0);
   align-self: auto;
   color: rgb(255, 255, 255);
@@ -52,3 +58,17 @@ body {
 button{
   background: transparent;
 }
+
+.parallax {
+  /* Coloque a imagem a ser usada como background */
+  background-image: url("C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\img\50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg");
+   
+  /* Defina uma altura para a visão que o usuário terá da imagem */
+  min-height: 350px;
+   
+  /* defina o background como fixo e posicione a imagem */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
