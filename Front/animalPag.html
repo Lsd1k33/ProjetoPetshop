@@ -47,20 +47,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- tag para adicional css diretamente dentro do arquivo html - não recomendado
-    <style>
-      body {
-        background-color: lightblue;
-      }
-      h1 {
-        color: white;
-        text-align: center;
-      }
-      p {
-        font-family: verdana;
-        font-size: 20px;
-      }
-    </style>-->
+   
     <link rel="shortcut icon" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\img\favicon (5).ico" type="image/x-ico" />
   </head>
   <body
@@ -78,7 +65,7 @@
       </h5>
       <h6>Ziriguidum PetShop</h6>
     </div>
-  </body>
+  
   <p>
   </p>
   <div class="para2">
@@ -87,7 +74,7 @@
       <a class="nav-link" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\pag_entrada.html">Página Inicial</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\clientePag.html">Cliente</a>
+      <a class="nav-link " href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\pessoaPag.html">Pessoa</a>
     </li>
     <li class="nav-item">
       <a class="nav-link active" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\animalPag.html">Animal</a>
@@ -99,15 +86,71 @@
       <a class="nav-link" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\banhoTosaPag.html">Banho e Tosa</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Passeio</a>
+      <a class="nav-link" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\passeioPag.html">Passeio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Sair</a
+      <a class="nav-link" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\index.html">Sair</a
       >
     </li>
   </ul>
   </div>
+  <table>
+    <tr>
+      <td>
+        <form>
+          <div>
+            <label>Nome do Animal</label>
+            <input type="text" name="fullname" id="fullname">
+          </div>
+          <div>
+              <label>Raça do Animal</label>
+              <input type="text" name="racaAnimal" id="racaAnimal">
+          </div>
+          <div>
+              <label>Especie Animal</label>
+              <input type="text" name="especieAnimal" id="especieAnimal">
+          </div>
+          <div>
+              <label>Idade Animal</label>
+              <input type="number" name="idadeAnimal" id="idadeAnimal">
+          </div>
+          <div>
+              <label>Vacinado?</label>
+              <select name="vacinaAnimal" id="vacinaAnimal">
+                  <option value=0>Sim</option>
+                  <option value=1>Não</option>
+              </select>
+          </div>
+          <div>
+              <label>Código Dono</label>
+              <input type="text" name="codDono" id="codDono">
+          </div>
+          <div class="form-action-buttons">
+              <input type="submit" value="Salvar">
+          </div>
+        </form>
+      </td>
+      <td>
+           <table class="list" id="listaAnimal">
+             <thead>
+               <tr>
+                    <th>Nome do Animal</th>
+                    <th>Raça do Animal</th>
+                    <th>Especie do Animal</th>
+                    <th>Idade Animal</th>
+                    <th>Vacinado</th>
+                    <th>Código Dono</th>
+               </tr>
+             </thead>
+             <tbody>
 
+             </tbody>
+           </table>
+      </td>
+    </tr>
+  </table>
+  <script src="inicial.js"></script>
+  </body>
   <div
     class="container bg-information border border-white rounded-lg fixed-bottom fixed-left"
     style="width: 680px;"
