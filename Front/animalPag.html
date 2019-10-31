@@ -21,18 +21,7 @@
     <!-- palavras chaves-->
     <meta name="keywords" content="PetShop, Animal, Cachorro, Tosa" />
     <meta name="author" content="Mathias Almeida Gianotti de Nonohay" />
-    <!-- indicação de que a página deve ser atualizada a cada 30 segundos-->
-    <!--<meta http-equiv="refresh" content="30" />-->
-
-    <!-- código javascript simplificado não recomendado-->
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Bem Vindo Consagrado!";
-      }
-    </script>
-    <!-- código javascript 2 recomendado-->
-    <script src="./js/inicial.js"></script>
-
+    
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -53,8 +42,7 @@
   <body
     id="bodyID"
     class="bodyClass"
-    background="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\img\50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg"
-  >
+    background="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\img\50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg">
     <p></p>
     <div
       class="container text-center para1 border border-dark rounded-pill"
@@ -97,7 +85,7 @@
   <table>
     <tr>
       <td>
-        <form>
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
           <div>
             <label>Nome do Animal</label>
             <input type="text" name="fullname" id="fullname">
@@ -140,6 +128,7 @@
                     <th>Idade Animal</th>
                     <th>Vacinado</th>
                     <th>Código Dono</th>
+                    <th></th>
                </tr>
              </thead>
              <tbody>
@@ -149,7 +138,7 @@
       </td>
     </tr>
   </table>
-  <script src="inicial.js"></script>
+  <script src="js/tabscript.js"></script>
   </body>
   <div
     class="container bg-information border border-white rounded-lg fixed-bottom fixed-left"
