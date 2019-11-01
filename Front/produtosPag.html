@@ -86,8 +86,15 @@
     <li class="nav-item">
       <a class="nav-link" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\pag_entrada.html">Página Inicial</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link " href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\pessoaPag.html">Pessoa</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Pessoas
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\clientePag.html">Cliente</a>
+        <a class="dropdown-item" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\funcionarioPag.html">Funcionário</a>
+        <a class="dropdown-item" href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\forncedorPag.html">Fornecedor</a>
+      </div>
     </li>
     <li class="nav-item">
       <a class="nav-link " href="C:\Users\Aluno\Documents\Mathias\ProjetoPetshop\Front\animalPag.html">Animal</a>
@@ -107,7 +114,44 @@
     </li>
   </ul>
   </div>
-
+  
+  <script>
+    function AddCarrinho(produto, qtd, valor, posicao)
+    { 
+    localStorage.setItem("produto" + posicao, produto);
+    localStorage.setItem("qtd" + posicao, qtd);
+    valor = valor * qtd;
+    localStorage.setItem("valor" + posicao, valor);
+    alert("Produto adicionado ao carrinho!");
+    }
+   </script>
+   <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Sabão', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+   <script>
+      var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+      var i = 0;     // variável que irá percorrer as posições
+      var valor = 0; // variável que irá receber o preço do produto convertido em Float.
+      
+      for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
+      {
+        var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+        if(prod != null) 
+        {	
+          // exibe os dados da lista dentro da div itens
+          document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+          document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+          document.getElementById("itens").innerHTML += " ";
+          document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+          
+          // calcula o total dos recheios
+          valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+          total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+        }
+      } 
+      // exibe o total dos recheios
+      document.getElementById("total").innerHTML = total.toFixed(2); 
+     </script>
+     
+     <button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
   <div
     class="container bg-information border border-white rounded-lg fixed-bottom fixed-left"
     style="width: 680px;"

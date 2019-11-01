@@ -1,0 +1,98 @@
+
+/*classe CSS começa com ponto.*/
+/*É possível usar mais do que uma classe CSS em uma tag html.*/
+.para1 {
+    text-align: center;
+    color: rgb(5, 3, 3);
+  }
+  
+  .para2 {
+    background-color: transparent;
+    align-self: auto;
+    color: rgb(255, 255, 255);
+  }
+  
+  .para3 {
+    background-color: rgb(0, 0, 0);
+    align-self: auto;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*Classe CSS utilizada do body*/
+  .bodyClass {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /*Classe CSS utilizada do body 2*/
+  .bodyClass2 {
+    background-color: rgb(162, 209, 152);
+  }
+  
+button{
+    background: transparent;
+  }
+  
+  body >table{
+    margin: 0px 0px 0px 0px;
+    width:120%;
+  }
+  
+  table{
+    margin: 0px 0px 0px 0px;
+    border-collapse: collapse;
+  }
+  
+  table.list{
+    margin: -225px 0px 0px 30px;
+    width: 900px;
+  }
+  
+  td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+  }
+  
+  input[type=text], input[type=number]{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit]{
+    width: 30%;
+    background-color: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form div.form-action-buttons{
+    text-align: right;
+  }
+  
+  a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+  }
+  
+  label.validation-error{
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .hide{
+    display: none;
+  }
